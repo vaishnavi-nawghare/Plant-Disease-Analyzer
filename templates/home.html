@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Plast Disease Analyzer
+{% endblock pagetitle %}
+{% block body %}
+<style>
+  body{
+    overflow-x: hidden;
+  }
+  @media only screen and (max-width: 830px) {
+    .laptop{
+      display: none;
+    }
+  }
+  @media (min-width:830px) and (max-width: 1536px){
+    .mobile{
+      display: none;
+    }
+  }
+</style>
+
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 12%;font-weight: 400;color: rgb(232, 236, 232);"><b>Plant Disease
+                Analyzer </b></h1>
+        <p class="lead" style="font-weight: 500;color: rgb(254, 255, 255);">Upload a photo of your plant to identify diseases and get expert-backend remedies</p>
+    </div>
+</div>
+
+<center class="laptop">
+    <a href="/login">
+    <button class = "bttn-pill bttn-lg btn-success"><b style="color: black;">Get started</b></button>
+</a>
+</center>
+
+</center>
+
+{% endblock body %}
